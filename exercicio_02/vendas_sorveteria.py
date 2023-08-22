@@ -1,4 +1,6 @@
 # Exercicio 2 da atividade prática
+
+# mensagem de boas-vindas e a tabela de sabores com preços
 print("Bem-vindo à Sorveteria da Isabel Henrique")
 print(37 * "-" + "Cardápio" + 37 * "-")
 print(
@@ -15,8 +17,9 @@ print(
 )
 print(82 * "-")
 
-acumulador = 0
+acumulador = 0  # inicialização do acumulador
 
+# controle de fluxo
 while True:
     sabor = input("Entre com o valor desejado (tr/pr/es): ").lower()
     if sabor not in [
@@ -70,7 +73,7 @@ while True:
     ).lower()
     if (
         outro_pedido == "s"
-    ):  # resolve o problema de 'S' e 's', colocando o caractere 's' em minusculo
+    ):  # resolve o problema das letras 'S' e 's', uma vez que o caractere 's' digitado pelo usuário permanecerá sempre em minúsculo
         continue
     else:
         print(f"O valor total a ser pago é: R$ {acumulador:.2f}")

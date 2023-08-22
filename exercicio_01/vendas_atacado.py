@@ -1,4 +1,6 @@
 # Exercicio 1 da atividade prática
+
+# mensagem de boas-vindas
 print("Bem-vindo à Loja da Isabel Henrique")
 
 # entrada de dados pelo usuário
@@ -6,7 +8,7 @@ valor_produto = float(input("Entre com o valor do produto: "))
 quantidade_produto = int(input("Entre com a quantidade do produto: "))
 desconto_produto = 0
 
-# controle de fluxo
+# controle de fluxo if-else
 if quantidade_produto <= 200:
     desconto_produto = 0.00
 elif 200 <= quantidade_produto < 1000:
@@ -20,5 +22,6 @@ else:
 total_sem_desconto = valor_produto * quantidade_produto
 total_com_desconto = total_sem_desconto - total_sem_desconto * desconto_produto
 
+# imprimir o valor total com/sem desconto
 print(f"O valor SEM desconto: R$ {total_sem_desconto:.2f}")
 print(f"O valor COM desconto: R$ {total_com_desconto:.2f}")
