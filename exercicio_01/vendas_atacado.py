@@ -1,4 +1,4 @@
-# Exercicio 1 da atividade prática
+# Exercício 1 da atividade prática
 
 # mensagem de boas-vindas
 print("Bem-vindo à Loja da Isabel Henrique")
@@ -18,7 +18,7 @@ elif 1000 <= quantidade_produto < 2000:
 else:
     desconto_produto = 0.15
 
-# calculo do desconto
+# cálculo do desconto
 total_sem_desconto = valor_produto * quantidade_produto
 total_com_desconto = total_sem_desconto - total_sem_desconto * desconto_produto
 
